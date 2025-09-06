@@ -1,0 +1,40 @@
+package com.thewa.medsyncservice.controller;
+import com.thewa.medsyncservice.entity.Doctor;
+import com.thewa.medsyncservice.service.DoctorService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController("/api/doctor")
+public class DoctorController {
+   private final DoctorService doctorService;
+   
+   public DoctorController(DoctorService doctorService) {
+      this.doctorService = doctorService;
+   }
+   
+   @GetMapping("/{id}")
+   public Doctor getDoctorById(@PathVariable Long id) {
+      return doctorService.getById(id);
+   }
+   
+   @GetMapping("/all")
+   public List<Doctor> getAllDoctors() {
+      return doctorService.getAll();
+   }
+   
+   @PostMapping
+   public Doctor saveDoctor(@RequestBody Doctor doctorDetails) {
+      return doctorService.save(doctorDetails);
+   }
+   
+   @PutMapping("/{id}")
+   public Doctor updateDoctor(@RequestBody Doctor doctorDetails, @PathVariable Long id) {
+      return doctorService.update(id, doctorDetails);
+   }
+   
+   @DeleteMapping("/{id}")
+   public void deleteDoctor(@PathVariable Long id) {
+      doctorService.delete(id);
+   }
+}
