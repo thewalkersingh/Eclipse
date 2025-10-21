@@ -1,0 +1,36 @@
+package com.thewa.medsyncservice.service;
+import com.thewa.medsyncservice.entity.Doctor;
+import com.thewa.medsyncservice.repository.DoctorRepository;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class DoctorService {
+   private final DoctorRepository doctorRepository;
+   
+   public DoctorService(DoctorRepository doctorRepository) {
+	  this.doctorRepository = doctorRepository;
+   }
+   
+   public Doctor getById(Long id) {
+	  return doctorRepository.findById(id).get();
+   }
+   
+   public Doctor save(Doctor doctor) {
+	  return doctorRepository.save(doctor);
+   }
+   
+   public List<Doctor> getAll() {
+	  return doctorRepository.findAll();
+   }
+   
+   public Doctor update(Long id, Doctor doctor) {
+	  delete(id);
+	  return doctorRepository.save(doctor);
+   }
+   
+   public void delete(Long doctorId) {
+	  doctorRepository.deleteById(doctorId);
+   }
+}

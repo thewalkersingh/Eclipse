@@ -1,0 +1,26 @@
+package com.thewa.medsyncservice.mapper;
+import com.thewa.medsyncservice.dto.DoctorDTO;
+import com.thewa.medsyncservice.entity.Doctor;
+import com.thewa.medsyncservice.entity.Hospital;
+
+public class DoctorMapper {
+   public static DoctorDTO toDoctorDTO(Doctor doctor) {
+      DoctorDTO doctorDTO = new DoctorDTO();
+      doctorDTO.setId(doctor.getId());
+      doctorDTO.setName(doctor.getName());
+      doctorDTO.setEmail(doctor.getEmail());
+      doctorDTO.setSpecialization(doctor.getSpecialization());
+      doctorDTO.setHospitalId(doctor.getHospital().getId());
+      return doctorDTO;
+   }
+   
+   public static Doctor toDoctor(DoctorDTO doctorDTO, Hospital hospital) {
+      Doctor doctor = new Doctor();
+      doctor.setId(doctorDTO.getId());
+      doctor.setName(doctorDTO.getName());
+      doctor.setEmail(doctorDTO.getEmail());
+      doctor.setSpecialization(doctorDTO.getSpecialization());
+      doctor.setHospital(hospital);
+      return doctor;
+   }
+}

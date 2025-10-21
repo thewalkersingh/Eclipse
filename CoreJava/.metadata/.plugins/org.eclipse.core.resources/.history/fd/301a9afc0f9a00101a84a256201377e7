@@ -1,0 +1,30 @@
+package linkedList;
+import java.io.IOException;
+
+public class MergeTwoSortedLL {
+   public static void main(String[] args) throws NumberFormatException, IOException {
+      
+   }
+   
+   public static Node<Integer> mergeTwoSorted(Node<Integer> head1, Node<Integer> head2) {
+      // Your code goes here
+      Node<Integer> head = new Node<>(-1);
+      Node<Integer> tail = head;
+      while (head1 != null && head2 != null) {
+	 if (head1.data <= head2.data) {
+	    tail.next = head1;
+	    head1 = head1.next;
+	 } else {
+	    tail.next = head2;
+	    head2 = head2.next;
+	 }
+	 tail = tail.next;
+      }
+      if (head1 != null) {
+	 tail.next = head1;
+      } else {
+	 tail.next = head2;
+      }
+      return head.next;
+   }
+}

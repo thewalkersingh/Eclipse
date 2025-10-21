@@ -1,0 +1,26 @@
+package arrayList;
+import java.util.ArrayList;
+
+public class RemoveConsecutiveDuplicates {
+   public static void main(String[] args) {
+      int[] arr = { 10, 10, 20, 20, 20, 30, 40, 10 };
+      ArrayList<Integer> result = removeDuplicate(arr);
+      print(result);
+   }
+   
+   private static ArrayList<Integer> removeDuplicate(int[] arr) {
+      ArrayList<Integer> ans = new ArrayList<>();
+      ans.add(arr[0]);
+      for (int i = 1; i < arr.length; i++) {
+	 if (arr[i] != arr[i - 1])
+	    ans.add(arr[i]);
+      }
+      return ans;
+   }
+   
+   private static void print(ArrayList<Integer> result) {
+      for (int i : result)
+	 System.out.print(i + " ");
+      System.out.println();
+   }
+}

@@ -1,0 +1,31 @@
+package arrays.easy;
+public class CountVowelsConsonantsSpaces {
+   public static void main(String[] args) {
+      // String str = "Take u forward is Awesome";
+      // String str = "India won the cricket match";
+      String str = "hEllOWorlD";
+      int n = 10;
+      int[] ans = countVowelsConsonantsSpaces(str, n);
+      for (int i : ans)
+	 System.out.print(i + " ");
+   }
+   
+   static int[] countVowelsConsonantsSpaces(String s, int n) {
+      // Write your code here.
+      int vowelsCount = 0;
+      int consonantCount = 0;
+      int spaceCount = 0;
+      
+      String rest = s.toLowerCase();
+      for (int i = 0; i < n; i++) {
+	 char current = rest.charAt(i);
+	 if (current == 'a' || current == 'e' || current == 'i' || current == 'o' || current == 'u')
+	    vowelsCount++;
+	 else if (current == ' ')
+	    spaceCount++;
+	 else
+	    consonantCount++;
+      }
+      return new int[] { vowelsCount, consonantCount, spaceCount };
+   }
+}

@@ -1,0 +1,42 @@
+package arrayList;
+
+import java.util.ArrayList;
+
+public class ReverseArray {
+   public static void main(String[] args) {
+      ArrayList<Integer> arr = new ArrayList<>();
+      arr.add(1);
+      arr.add(2);
+      arr.add(3);
+      arr.add(12);
+      arr.add(15);
+      arr.add(16);
+      arr.add(18);
+      arr.add(51);
+      arr.add(10);
+      int m = 4;
+      System.out.println(arr.size());
+      reverseArray(arr, m);
+      System.out.println(arr.get(5));
+      System.out.println(arr);
+   }
+   
+   public static ArrayList<Integer> reverseArray(ArrayList<Integer> arr, int m) {
+      ArrayList<Integer> result = new ArrayList<>();
+      int len = arr.size() - 1;
+      int mid = (m + 1 + len) / 2;
+      for (int i = m + 1; i <= mid; i++) {
+	 int temp = arr.get(i);
+	 int temp2 = arr.get(len);
+	 arr.set(i, temp2);
+	 arr.set(len, temp);
+	 len--;
+      }
+      return result;
+   }
+}
+/*
+ * We have an array ARR = {1, 2, 3, 4, 5, 6} and M = 3 , considering 0 based
+ * indexing so the sub array {5, 6} will be reversed and our output array will
+ * be {1, 2, 3, 4, 6, 5}.
+ */

@@ -1,0 +1,42 @@
+package com.thewa.medsyncservice.service;
+import java.util.List;
+import org.springframework.stereotype.Service;
+import com.thewa.medsyncservice.entity.Doctor;
+import com.thewa.medsyncservice.repository.DoctorRepository;
+import com.thewa.medsyncservice.repository.HospitalRepository;
+
+@Service
+public class DoctorService {
+   private final DoctorRepository doctorRepository;
+   private final HospitalRepository hospitalRepository;
+   
+   public DoctorService(DoctorRepository doctorRepository, HospitalRepository hospitalRepository) {
+      this.doctorRepository = doctorRepository;
+      this.hospitalRepository = hospitalRepository;
+   }
+   
+   public List<Doctor> getAll() {
+      return doctorRepository.findAll();
+   }
+   
+   public Doctor getById(Long id) {
+      return doctorRepository.findById(id).get();
+   }
+   
+   public Doctor save(Doctor doctor) {
+      return doctorRepository.save(doctor);
+   }
+   
+   public Doctor update(Long id, Doctor doctor) {
+      delete(id);
+      return doctorRepository.save(doctor);
+   }
+   
+   public void delete(Long doctorId) {
+      doctorRepository.deleteById(doctorId);
+   }
+   
+   // public Pageable<Doctor> getDoctorByName(String name, Pageable pageable) {
+   // return doctorRepository.findByNameContainingIgnoreCase(name, pageable);
+   // }
+}

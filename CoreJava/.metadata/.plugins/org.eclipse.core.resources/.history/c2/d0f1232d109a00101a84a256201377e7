@@ -1,0 +1,33 @@
+package linkedList;
+public class Swap_List_Nodes_in_pairs {
+   public static void main(String[] args) {
+      ListNode A = new ListNode(1);
+      A.next = new ListNode(2);
+      A.next.next = new ListNode(3);
+      A.next.next.next = new ListNode(4);
+      ListNode ans = swapPairs(A);
+      System.out.println(ans.toString());
+   }
+   
+   public static ListNode swapPairs(ListNode A) {
+      ListNode tempHead = A;
+      ListNode head = A;
+      while (tempHead != null) {
+	 ListNode first = tempHead.next.next;
+	 ListNode second = tempHead.next;
+	 tempHead = tempHead.next.next;
+	 first.next = second;
+      }
+      return head;
+   }
+}
+
+class List_Node {
+   public int val;
+   public ListNode next;
+   
+   List_Node(int x) {
+      val = x;
+      next = null;
+   }
+}
