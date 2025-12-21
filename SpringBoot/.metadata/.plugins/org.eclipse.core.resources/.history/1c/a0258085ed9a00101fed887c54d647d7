@@ -1,5 +1,0 @@
-package com.thewa.medsyncservice.exception;
-
-public class ResourceNotFoundException {
-   
-}

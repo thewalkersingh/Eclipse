@@ -1,7 +1,0 @@
-package com.thewa.medsyncservice.exception;
-
-public class ResourceNotFoundException extends RuntimeException {
-   public SubmissionNotFoundException(String message) {
-	  super(message);
-}
-}

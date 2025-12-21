@@ -171,3 +171,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.webjars:s
 2025-09-26 21:02:11,053 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-09-26 21:02:11,057 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory D:\My Projects\MedSync\medsync-service\src\test\resources
 2025-09-26 21:09:42,590 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-12-01 15:01:38,370 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
