@@ -1,0 +1,11 @@
+package hashmap;
+public class MapNode<K, V> {
+	MapNode<K, V> next;
+	K key;
+	V value;
+	
+	MapNode(K key, V value) {
+		this.key = key;
+		this.value = value;
+	}
+}

@@ -1,0 +1,23 @@
+package hashmap;
+public class HashMapDemo {
+   public static void main(String[] args) {
+      HashMap<Integer, Integer> map = new HashMap<>();
+      int[] arr = { 12, 7, 8, 4, 5 };
+      
+      for (int i : arr) {
+	 int ran = (int) (Math.random() * 10);
+	 map.put(i, ran);
+      }
+      
+      System.out.println(map.get(3));
+      System.out.println(map.get(7));
+      System.out.println(map.get(8));
+      System.out.println(map.get(4));
+      System.out.println(map.get(5));
+      
+      map.put(12, 34);
+      map.put(78, 74);
+      System.out.println(map.get(12));
+      System.out.println(map.get(78));
+   }
+}
