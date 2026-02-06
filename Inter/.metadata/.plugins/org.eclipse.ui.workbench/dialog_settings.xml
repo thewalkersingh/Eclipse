@@ -9,10 +9,10 @@
 		</section>
 	</section>
 	<section name="WorkbenchPreferenceDialog.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="466"/>
-		<item key="DIALOG_Y_ORIGIN" value="55"/>
-		<item key="DIALOG_WIDTH" value="619"/>
-		<item key="DIALOG_HEIGHT" value="541"/>
+		<item key="DIALOG_X_ORIGIN" value="153"/>
+		<item key="DIALOG_Y_ORIGIN" value="17"/>
+		<item key="DIALOG_WIDTH" value="1061"/>
+		<item key="DIALOG_HEIGHT" value="772"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="PreferencesImportWizard">
@@ -25,6 +25,47 @@
 			<item key="DIALOG_Y_ORIGIN" value="-48"/>
 			<item key="DIALOG_WIDTH" value="525"/>
 			<item key="DIALOG_HEIGHT" value="561"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_WIDTH" value="450"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_HEIGHT" value="540"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="true"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_X_ORIGIN" value="575"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_Y_ORIGIN" value="215"/>
+		<list key="orderedElements">
+			<item value="org.eclipse.jdt.ui.actions.Format"/>
+		</list>
+		<list key="orderedProviders">
+			<item value="org.eclipse.ui.actions"/>
+		</list>
+		<list key="textEntries">
+			<item value="2"/>
+		</list>
+		<list key="textArray">
+			<item value="format"/>
+			<item value="forma"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.preferences.keysPreferencePage">
+		<item key="actionSetFilter" value="true"/>
+		<item key="internalFilter" value="true"/>
+		<item key="uncategorizedFilter" value="true"/>
+	</section>
+	<section name="PreferencesExportWizard">
+		<item key="" value="C:\Users\thewa\OneDrive\Online Docs\Eclipse Settings\EclipseSetttings.epf"/>
+		<item key="WizardPreferencesExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID" value="false"/>
+		<item key="WizardPreferencesExportPage1.EXPORT_ALL_PREFERENCES_ID" value="true"/>
+		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\thewa\OneDrive\Online Docs\Eclipse Settings\EclipseSetttings.epf"/>
+		</list>
+		<section name="PreferencesExportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="0"/>
+			<item key="DIALOG_Y_ORIGIN" value="0"/>
+			<item key="DIALOG_WIDTH" value="525"/>
+			<item key="DIALOG_HEIGHT" value="641"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
 	</section>
