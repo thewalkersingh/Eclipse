@@ -1,0 +1,9 @@
+commentBorder=\#556068 | null | false | false | false | false
+declBoder=\#FFFFFF | null | null | null | null | null
+declBorder=\#a7ec21 | null | false | false | false | false
+eclipse.preferences.version=1
+tagAttributeValue=\#16c08f | null | false | true | false | false
+tagBorder=\#73828c | null | false | false | false | false
+xmlContent=\#e3e6e8 | null | false | false | false | false
+xml_content_assist_default_page_sort_order=org.eclipse.wst.xml.ui.proposalCategory.xmlTags\u0000org.eclipse.wst.xml.ui.proposalCategory.xmlTemplates\u0000
+xml_content_assist_own_page_sort_order=org.eclipse.wst.xml.ui.proposalCategory.xmlTemplates\u0000org.eclipse.wst.xml.ui.proposalCategory.xmlTags\u0000
