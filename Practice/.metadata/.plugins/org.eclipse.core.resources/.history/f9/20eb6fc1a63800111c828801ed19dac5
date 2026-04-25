@@ -1,0 +1,23 @@
+package week5.foodDeliveryApp;
+
+import java.util.List;
+
+public class Kitchen {
+	private final List<Order> orders;
+	
+	public Kitchen(List<Order> orders) {
+		this.orders = orders;
+	}
+	
+	public void process(Order order) {
+		System.out.println("Received order: " + order);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Prepared OrderOptimized: " + order);
+		
+	}
+	
+}

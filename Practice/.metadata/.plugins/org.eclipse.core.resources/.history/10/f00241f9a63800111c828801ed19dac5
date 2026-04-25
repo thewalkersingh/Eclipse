@@ -1,0 +1,27 @@
+package week5.foodDeliveryAppOptimized;
+
+public class OrderOptimized {
+	private final int orderId;
+	private final String foodItem;
+	
+	public OrderOptimized(int orderId, String foodItem) {
+		this.orderId = orderId;
+		this.foodItem = foodItem;
+	}
+	
+	public int getOrderId() {
+		return orderId;
+	}
+	
+	public String getFoodItem() {
+		return foodItem;
+	}
+	
+	@Override
+	public String toString() {
+		return "Order{" +
+				"orderId=" + orderId +
+				", foodItem='" + foodItem + '\'' +
+				'}';
+	}
+}

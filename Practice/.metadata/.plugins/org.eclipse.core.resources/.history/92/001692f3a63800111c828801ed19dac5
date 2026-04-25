@@ -1,0 +1,34 @@
+package org.horizon.threads.foodDeliveryAppOptimized;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ForkJoinPool;
+
+public class KitchenOptimized extends Thread {
+   private final List<OrderOptimized> ordersList;
+   private final ForkJoinPool forkJoinPool;
+   
+   public KitchenOptimized(List<OrderOptimized> ordersList) {
+	this.ordersList = ordersList;
+	this.forkJoinPool = new ForkJoinPool();
+   }
+   
+   public void run() {
+	while (true) {
+	   synchronized (ordersList) {
+		while (ordersList.isEmpty()) {
+		   try {
+			ordersList.wait();
+		   } catch (InterruptedException e) {
+			System.err.println(e);
+		   }
+		}
+		List<OrderOptimized> ordersToProcessList = new ArrayList<OrderOptimized>(ordersList);
+		ordersList.clear();
+		forkJoinPool.execute(new ProcessOrderAction(ordersToProcessList, 0, ordersToProcessList.size()));
+	   }
+	   
+	}
+	
+   }
+   
+}

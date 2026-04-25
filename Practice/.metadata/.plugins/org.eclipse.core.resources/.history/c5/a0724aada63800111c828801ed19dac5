@@ -1,0 +1,21 @@
+package org.horizon.threads.foodDeliveryApp;
+
+import java.util.List;
+
+public class Driver {
+	private final List<Order> deliveries;
+	
+	public Driver(List<Order> deliveries) {
+		this.deliveries = deliveries;
+	}
+	
+	public void deliver(Order order) {
+		System.out.println("Finding delivery partner: " + order);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println("DriverOptimized delivered: " + order);
+	}
+}

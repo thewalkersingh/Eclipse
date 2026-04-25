@@ -1,0 +1,41 @@
+package org.horizon.hotel.service;
+import java.util.List;
+import org.horizon.hotel.dto.HotelRequest;
+import org.horizon.hotel.model.Hotel;
+import org.horizon.hotel.repository.HotelRepository;
+import org.springframework.stereotype.Service;
+
+@Service
+public class HotelService {
+   
+   private final HotelRepository hotelRepository;
+   
+   public HotelService(HotelRepository hotelRepository) {
+	this.hotelRepository = hotelRepository;
+   }
+   
+   public List<Hotel> getAllHotels() { return hotelRepository.findAll(); }
+   
+   public Hotel getHotelById(Long id) {
+	return hotelRepository.findById(id).get();
+   }
+   
+   public void createHotel(HotelRequest hotelRequest) {
+	Hotel hotel = new Hotel();
+	hotel.setCity(hotelRequest.getCity());
+	hotel.setName(hotelRequest.getName());
+	hotel.setRating(hotelRequest.getRating());
+	hotelRepository.save(hotel);
+   }
+   
+   public void deleteHotelById(Long id) {
+	hotelRepository.deleteById(id);
+   }
+   
+   public void updateHotel(HotelRequest updatedHotel) {
+	// 1. Get the previous data of the hotel
+	// 2. remove this old data from list
+	// 3. Add the updated data to the list.
+   }
+   
+}

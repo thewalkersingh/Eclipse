@@ -1,0 +1,54 @@
+package org.horizon.collections.list.copyOnWriteAL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+public class CopyOnWriteALDemoA {
+   public static void main(String[] args) {
+	CopyOnWriteArrayList<Integer> list = new CopyOnWriteArrayList<>();
+	// usingArrayList(); // we will get error if we use ArrayList
+	usingCopyOnWrite();
+   }
+   
+   public static void usingArrayList() {
+	List<String> shopping = new ArrayList<>();
+	shopping.add("Milk");
+	shopping.add("Eggs");
+	shopping.add("Bread");
+	shopping.add("Chips");
+	System.out.println("Initial Shopping List: " + shopping);
+	for (String item : shopping) {
+	   System.out.println(item);
+	   if (item.equals("Bread")) {
+		shopping.add("Butter");
+		System.out.println("Added Butter while reading list");
+	   }
+	}
+	System.out.println("Updated Shopping List " + shopping);
+   }
+   
+   public static void usingCopyOnWrite() {
+	List<String> shopping = new CopyOnWriteArrayList<>();
+	shopping.add("Milk");
+	shopping.add("Eggs");
+	shopping.add("Bread");
+	shopping.add("Chips");
+	System.out.println("Initial Shopping List: " + shopping);
+	for (String item : shopping) {
+	   System.out.println(item);
+	   if (item.equals("Bread")) {
+		shopping.add("Butter");
+		System.out.println("Added Butter while reading list");
+	   }
+	}
+	System.out.println("Updated Shopping List " + shopping);
+   }
+   /*
+    * - whenever a write operation happens like adding or removing
+    * instead of directly modifying the existing list a new copy of the
+    * list is created, and the modification is applied to that copy. This
+    * ensures that other threads reading the list while it's being
+    * modified are unaffected.
+    * 
+    */
+}

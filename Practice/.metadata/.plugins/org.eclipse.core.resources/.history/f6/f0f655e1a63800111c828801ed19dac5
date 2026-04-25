@@ -1,0 +1,19 @@
+package org.horizon.threads.foodDeliveryApp;
+public class Order {
+   private final int orderId;
+   private final String foodItem;
+   
+   public Order(int orderId, String foodItem) {
+	this.orderId = orderId;
+	this.foodItem = foodItem;
+   }
+   
+   public int getOrderId() { return orderId; }
+   
+   public String getFoodItem() { return foodItem; }
+   
+   @Override
+   public String toString() {
+	return "OrderOptimized{" + "orderId=" + orderId + ", foodItem='" + foodItem + '\'' + '}';
+   }
+}
