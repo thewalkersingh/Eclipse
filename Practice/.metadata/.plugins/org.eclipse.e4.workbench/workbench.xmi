@@ -81,7 +81,7 @@
           <tags>persp.viewSC:org.eclipse.ui.views.PropertySheet</tags>
           <tags>persp.viewSC:org.eclipse.ui.views.ContentOutline</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_FEp64TYTEfGNyY8wxroQ4A" selectedElement="_FEp68zYTEfGNyY8wxroQ4A" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_jkYUQDimEfGim4LMiBShXA" containerData="3203" selectedElement="_FEp64zYTEfGNyY8wxroQ4A">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_jkYUQDimEfGim4LMiBShXA" containerData="3203" selectedElement="_FEp6-jYTEfGNyY8wxroQ4A">
               <children xsi:type="basic:PartStack" xmi:id="_FEp64zYTEfGNyY8wxroQ4A" elementId="topLeft" containerData="5871" selectedElement="_FEp65DYTEfGNyY8wxroQ4A">
                 <children xsi:type="advanced:Placeholder" xmi:id="_FEp65DYTEfGNyY8wxroQ4A" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_oQJDIDYREfG07-29j22SHA" closeable="true">
                   <tags>View</tags>
@@ -508,7 +508,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_oKCbIDYREfG07-29j22SHA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ZxrS0DigEfGim4LMiBShXA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.svg" tooltip="Print" command="_noWDYTYREfG07-29j22SHA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_DYoHIGMnEfGvcN4aJu72yQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.svg" tooltip="Print" command="_noWDYTYREfG07-29j22SHA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_oKCbITYREfG07-29j22SHA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -516,8 +516,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_oKCbIzYREfG07-29j22SHA" elementId="org.eclipse.ui.workbench.edit" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Zxsg8DigEfGim4LMiBShXA" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.svg" tooltip="Undo" command="_noTAPzYREfG07-29j22SHA"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Zxsg8TigEfGim4LMiBShXA" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.svg" tooltip="Redo" command="_noUOMjYREfG07-29j22SHA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_DYp8UGMnEfGvcN4aJu72yQ" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.svg" tooltip="Undo" command="_noTAPzYREfG07-29j22SHA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_DYqjYGMnEfGvcN4aJu72yQ" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.svg" tooltip="Redo" command="_noUOMjYREfG07-29j22SHA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_oKCbJDYREfG07-29j22SHA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -577,7 +577,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_oKDCMDYREfG07-29j22SHA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ZxtvEDigEfGim4LMiBShXA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.svg" tooltip="Pin Editor" type="Check" command="_noVcljYREfG07-29j22SHA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_DYsYkGMnEfGvcN4aJu72yQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.svg" tooltip="Pin Editor" type="Check" command="_noVcljYREfG07-29j22SHA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_oKDCMTYREfG07-29j22SHA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -620,6 +620,10 @@
     </trimBars>
     <trimBars xmi:id="_nnpfwzYREfG07-29j22SHA" elementId="org.eclipse.ui.trim.vertical2" contributorURI="platform:/plugin/org.eclipse.platform" toBeRendered="false" side="Right">
       <children xsi:type="menu:ToolControl" xmi:id="_FHsn0DYTEfGNyY8wxroQ4A" elementId="bottomRight(IDEWindow).(org.eclipse.jst.j2ee.J2EEPerspective.Horizon)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+        <tags>TrimStack</tags>
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolControl" xmi:id="_2lNpkGMnEfGvcN4aJu72yQ" elementId="stickyFolderRight(minimized)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
@@ -4212,6 +4216,8 @@
   <commands xmi:id="_oGvPgzYREfG07-29j22SHA" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.actionCollapse" commandName="Collapse All" description="Collapse All" category="_noOutDYREfG07-29j22SHA"/>
   <commands xmi:id="_oGvPhDYREfG07-29j22SHA" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.actionExpand" commandName="Expand All" description="Expand All" category="_noOutDYREfG07-29j22SHA"/>
   <commands xmi:id="_oGvPhTYREfG07-29j22SHA" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.filterBugs" commandName="Configure Filters..." description="Filter Bugs by Id..." category="_noOutDYREfG07-29j22SHA"/>
+  <commands xmi:id="_CgzuUWMnEfGvcN4aJu72yQ" elementId="org.eclipse.egit.ui.RepositoriesViewCloseAllProjects" commandName="Close All Projects" description="Close all open projects in the local Git repository" category="_noOuyzYREfG07-29j22SHA"/>
+  <commands xmi:id="_Cg0VYGMnEfGvcN4aJu72yQ" elementId="org.eclipse.egit.ui.RepositoriesViewOpenAllProjects" commandName="Open All Projects" description="Open all closed projects in the local Git repository" category="_noOuyzYREfG07-29j22SHA"/>
   <addons xmi:id="_nnpfyTYREfG07-29j22SHA" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_nnpfyjYREfG07-29j22SHA" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_nnpfyzYREfG07-29j22SHA" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
