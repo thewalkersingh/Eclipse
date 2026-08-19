@@ -1,10 +1,11 @@
 applyBackground=false
 approved.defs.file.last.changed.time=1693315978000
-configurationInstallLocation=/C\:/Eclipse/eclipse/
+configurationInstallLocation=/C\:/Users/Thewa/eclipse/jee-2025-12/eclipse/
 eclipse.preferences.version=1
 iconcolormode=pastel
+iconreplacement=true
 includeThemingInOomph=false
-last.download.attempt.time=1775957708123
-lastConfiguration=1775957697255
+last.download.attempt.time=1776239703296
+lastConfiguration=1776239695465
 newinstall=true
-workbench.theme=Dark Gray
+workbench.theme=Dark Windows 11

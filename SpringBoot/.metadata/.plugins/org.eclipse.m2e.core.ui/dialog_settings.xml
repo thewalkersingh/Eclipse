@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Projects\CodingNinja\11. Microservices\Hystrix_I"/>
 			<item value="D:\CodingNinja\2. Data Structure and Algo\D_Data_Structures_and_Algorithms"/>
 			<item value="D:\Projects\SkoolyApp\skooly-server"/>
 			<item value="D:\My Projects\MedSync\medsync-service"/>
